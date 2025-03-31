@@ -1,18 +1,20 @@
 # Kubernetes Lab
 ## Prerequisites
 
-## Python
+### Python
  - python3
  - python3-pip
  - python virtual environment (venv)
 
-## Kubernetes local single-node cluster
+### Kubernetes local single-node cluster
+Despite other solutions exist we recommend installing the Minikube K8s distribution. Minikube runs an all-in-one or a multi-node local Kubernetes cluster on your personal computer (including Windows, macOS and Linux PCs) so that you can try out Kubernetes, or for daily development work. Minikube supports many backends, but recommend choosing Docker.
  - [docker](https://docs.docker.com/)
  - [minikube](https://minikube.sigs.k8s.io/docs/start/)
  - [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
+   
 
-### Environment setup
-- Setup of a new kubernetes cluster:
+## Environment setup
+- Setup of a new Kubernetes cluster:
     ```bash
     minikube start
     ```
