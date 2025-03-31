@@ -1,55 +1,15 @@
 # Kubernetes Lab
-## Installation
+## Prerequisites
+
+## Python
  - python3
  - python3-pip
- - python virtual environment
-    ```bash
-    sudo apt-get update
-    sudo apt-get install python3 python3-pip python3-venv
-    ```
- - [docker](https://docs.docker.com/engine/install/linux-postinstall/)
-    ```bash
-    # Docker engine
-    sudo apt install \
-        ca-certificates \
-        curl \
-        gnupg
+ - python virtual environment (venv)
 
-    sudo mkdir -m 0755 -p /etc/apt/keyrings
-
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
-
-    echo \
-    "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-    "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
-    sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-
-    sudo apt-get update
-
-    sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-
-    # Docker command to non-sudo user
-    sudo groupadd docker
-    sudo usermod -aG docker $USER
-    newgrp docker
-
-    # Testing Docker installation
-    docker run hello-world
-    ```
+## Kubernetes local single-node cluster
+ - [docker](https://docs.docker.com/)
  - [minikube](https://minikube.sigs.k8s.io/docs/start/)
-
-     ```bash
-    curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-
-    sudo install minikube-linux-amd64 /usr/local/bin/minikube
-    ```
- - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
-
-    ```bash
-    curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-
-    sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-    ```
+ - [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
 
 ### Environment setup
 - Setup of a new kubernetes cluster:
