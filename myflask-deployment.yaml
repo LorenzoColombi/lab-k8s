@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: myflask
-          image: alessandrogilli/myflask:1
+          image: MYUSERNAME/myflask:1
           resources:
             limits:
               cpu: 100m
