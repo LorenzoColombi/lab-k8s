@@ -136,7 +136,7 @@ Check the Dashboard to see the changes.
 ### Adding an Autoscaler
 - Add an Horizontal Pod Autoscaler (HPA)
     ```bash
-    kubectl autoscale deployment myflask-deployment --cpu-percent=50 --min=3 --max=10
+    kubectl autoscale deployment myflask-deployment --cpu-percent=10 --min=3 --max=10
     ```
 - Check the HPA status 
     ```bash
