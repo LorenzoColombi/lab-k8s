@@ -16,7 +16,7 @@ Despite other solutions (e.g. kind, MicroK8s) exist we recommend installing the 
 ## Environment setup
 - Setup of a new Kubernetes cluster:
     ```bash
-    minikube start
+    minikube start --driver=docker
     ```
 - Test kubectl:
     ```bash
@@ -37,7 +37,7 @@ Despite other solutions (e.g. kind, MicroK8s) exist we recommend installing the 
     ```
 - Wait until all Pods are up and running:
     ```bash
-     kubectl get po -A
+     kubectl get pod -A
     ```
 
     ![Alt text](img/running.png "kubectl get po -A")
